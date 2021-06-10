@@ -1,0 +1,23 @@
+<p>Login works</p>
+
+<form>
+    <div>
+        <h2>User Login</h2>
+    </div>
+
+    <div>
+        <input type = "text" name = "email" [(ngModel)] = 'user.email' placeholder="Enter your email id">
+    </div>
+
+    <div>
+        <input type = "password" name = "password" [(ngModel)] = 'user.password' placeholder="Enter password">
+    </div>
+
+
+</form>
+   
+
+<button (click) = 'login()'>login</button>
+<button (click) = 'navigate()'>click me to dashboard</button>
+
+

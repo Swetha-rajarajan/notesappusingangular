@@ -1,0 +1,41 @@
+<h1>Note Taker</h1>
+<!-- Taking New Netoes -->
+<mat-expansion-panel >
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+       Add Notes
+      </mat-panel-title>
+     
+    </mat-expansion-panel-header>
+    <div>
+        <!-- Note Tittle: <input type="text" name="txtnote" (change)="onChangeText($event)" [value]="noteTittle" [style.background-color]="textbg" placeholder="note title"> -->
+        Note Tittle: <input type="text"  [(ngModel)]="note.title"  placeholder="note title">
+
+    </div>
+    <div>
+        <!-- Note Description: <input type="text" name="txtdesc" (change)="onChangeText($event)" [value]="noteDesc" [style.background-color]="textbg" placeholder="note dsc"> -->
+        Note Description: <input type="text"  [(ngModel)]="note.desc"   placeholder="note dsc">
+
+    </div>
+    <button type="submit" (click)="addNotes()">Save</button>
+</mat-expansion-panel>
+
+
+<!-- Display Notes -->
+
+
+<mat-card class="example-card" *ngFor="let note of notesList">
+    <mat-card-header>
+      <mat-card-title>{{note.title}}</mat-card-title>      
+    </mat-card-header>
+    <img mat-card-image src="../../assets/images/nokia.png" alt="Photo of a Shiba Inu">
+
+    <mat-card-content>
+      {{note.desc}}
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    <button type="submit" (click)="deleteNotes()">Delete</button>
+    </mat-card-actions>
+  </mat-card>

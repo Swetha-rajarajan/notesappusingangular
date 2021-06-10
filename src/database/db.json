@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "swetha",
+      "email": "swetha@gmail.com",
+      "mobile": "6381480249",
+      "password": "12345",
+      "confirmpassword": "12345"
+    },
+    {
+      "name": "snegha",
+      "email": "snegha@gmail.com",
+      "mobile": "9994353840",
+      "password": "11111",
+      "confirmpassword": "11111",
+      "id": 2
+    },
+    {
+      "name": "shivani",
+      "email": "shivani@gmail.com",
+      "mobile": "1234567891",
+      "password": "54321",
+      "confirmpassword": "54321",
+      "id": 3
+    },
+    {
+      "name": "sakthi",
+      "email": "sakthi@gmail.com",
+      "mobile": "1234567891",
+      "password": "12345",
+      "confirmpassword": "12345",
+      "id": 4
+    },
+    {
+      "name": "padma",
+      "email": "padma@gmail.com",
+      "mobile": "1234567891",
+      "password": "67891",
+      "confirmpassword": "67891",
+      "id": 5
+    }
+  ]
+}

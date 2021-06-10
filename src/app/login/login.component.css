@@ -1,0 +1,13 @@
+form{
+    margin : 50px 100px;
+}
+
+form div{
+    margin: 10px;
+}
+
+form input{
+    background-color:rgb(169, 197, 195);
+    height: 5vh;
+    width:20vh;
+}

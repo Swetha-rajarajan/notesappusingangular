@@ -1,0 +1,51 @@
+<p>register works!</p>
+<form [formGroup] = "registerForm">
+
+    <div>
+        <h2>Registration Form</h2>
+    </div>
+
+    <div>
+        <input type = "text" [(ngModel)]="user.name"  formControlName = "name" placeholder = "Enter username">
+    </div>
+    <small>
+        {{getUserNameErrorMsg()}}
+    </small>
+
+    <div>
+        <input type = "text" [(ngModel)]="user.email"  formControlName = "email" placeholder = "Enter email">
+    </div>
+    <small>
+        {{getEmailErrorMsg()}}
+    </small>
+
+    <div>
+        <input  [(ngModel)]="user.mobile"  formControlName = "mobile" placeholder = "Enter mobile number">
+    </div>
+    <small>
+        {{getMobileErrorMsg()}}
+    </small>
+
+    <div>
+        <input type = "password" [(ngModel)]="user.password" formControlName = "password" placeholder = "Enter Password">
+    </div>
+    <small>
+        {{getPasswordErrorMsg()}}
+    </small>
+
+
+    <div>
+        <input type = "password" [(ngModel)]="user.confirmpassword"  formControlName = "confirmpassword" placeholder = "Confirm Password">
+    </div>
+    
+    <small>
+        {{checkPasswordandConfirmpassword()}}
+    </small>
+    <div>
+        <button (click) = 'register()'>Register</button>
+
+    </div>
+    <button type="submit" (click)="addUsers()">Save</button>
+    
+
+    </form>
